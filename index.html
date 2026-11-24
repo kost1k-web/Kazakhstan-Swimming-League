@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kazakhstan Swimming League (KSL) — Сезон 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #062356;
+      background-color: #ffffff;
+    }
+    .ksl-gradient {
+      background: linear-gradient(135deg, #042559 0%, #0B4F9F 55%, #009FE3 100%);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#009FE3] selection:text-white">
+
+  <!-- НАВИГАЦИЯ -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Логотип KSL в шапке -->
+      <a href="#" class="flex items-center gap-3 shrink-0">
+        <svg viewBox="0 0 1000 320" class="h-11 w-auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KSL Kazakhstan Swimming League">
+          <g fill="#042559">
+            <path d="M180 42 L262 42 L231 118 L322 42 L416 42 L292 136 L372 206 L278 206 L221 153 L199 206 L118 206 Z"/>
+            <path d="M448 42 L688 42 L669 87 L485 87 C473 87 468 92 465 98 C463 104 467 108 479 108 L602 108 C648 108 666 130 652 163 C638 196 604 206 556 206 L382 206 L401 161 L558 161 C571 161 577 156 580 149 C583 142 578 138 565 138 L442 138 C397 138 380 116 394 84 C407 53 428 42 448 42 Z"/>
+            <path d="M726 42 L808 42 L760 159 L906 159 L886 206 L658 206 Z"/>
+          </g>
+          <path d="M68 250 C205 186 355 186 502 224 C638 258 785 245 948 142 C822 232 668 262 504 234 C354 208 212 206 68 250 Z" fill="#009FE3"/>
+          <path d="M275 202 C412 192 535 224 662 246 C778 265 868 235 942 162 C858 238 758 276 632 256 C508 236 395 205 275 202 Z" fill="#0B4F9F"/>
+          <path d="M582 206 C695 224 812 214 934 152 C832 204 718 214 606 196 Z" fill="#009FE3"/>
+          <rect x="68" y="280" width="95" height="5" fill="#042559"/>
+          <rect x="837" y="280" width="95" height="5" fill="#042559"/>
+          <text x="500" y="291" text-anchor="middle" fill="#042559" font-family="Inter, Arial, sans-serif" font-weight="900" font-style="italic" font-size="25" letter-spacing="5">KAZAKHSTAN SWIMMING LEAGUE</text>
+        </svg>
+      </a>
+
+      <!-- Меню -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-[#062356]">
+        <a href="#about" class="hover:text-[#009FE3] transition">О лиге и регламент</a>
+        <a href="#categories" class="hover:text-[#009FE3] transition">Категории и дистанции</a>
+        <a href="#schedule" class="hover:text-[#009FE3] transition">Расписание</a>
+        <a href="#awards" class="hover:text-[#009FE3] transition">Награды</a>
+        <a href="#protocols" class="hover:text-[#009FE3] transition">Стартовый протокол</a>
+        <a href="#contacts" class="hover:text-[#009FE3] transition">Контакты</a>
+      </nav>
+
+      <!-- Кнопка -->
+      <div class="flex items-center gap-3">
+        <a href="#register" class="bg-[#009FE3] hover:bg-[#0086c2] text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-sm transition">
+          Подать заявку
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ГЛАВНАЯ ОБЛОЖКА (БАННЕР С ВШИТЫМ ЛОГОТИПОМ KSL) -->
+  <section class="bg-white pt-6 pb-12 border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Чистый белый баннер во всю ширину с вшитым логотипом -->
+      <div class="w-full py-4 sm:py-8 flex justify-center items-center bg-white">
+        <svg viewBox="0 0 1000 320" class="w-full max-w-4xl h-auto block" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KSL Kazakhstan Swimming League">
+          <!-- Буквы K S L -->
+          <g fill="#042559">
+            <path d="M180 42 L262 42 L231 118 L322 42 L416 42 L292 136 L372 206 L278 206 L221 153 L199 206 L118 206 Z"/>
+            <path d="M448 42 L688 42 L669 87 L485 87 C473 87 468 92 465 98 C463 104 467 108 479 108 L602 108 C648 108 666 130 652 163 C638 196 604 206 556 206 L382 206 L401 161 L558 161 C571 161 577 156 580 149 C583 142 578 138 565 138 L442 138 C397 138 380 116 394 84 C407 53 428 42 448 42 Z"/>
+            <path d="M726 42 L808 42 L760 159 L906 159 L886 206 L658 206 Z"/>
+          </g>
+          <!-- Волны -->
+          <path d="M68 250 C205 186 355 186 502 224 C638 258 785 245 948 142 C822 232 668 262 504 234 C354 208 212 206 68 250 Z" fill="#009FE3"/>
+          <path d="M275 202 C412 192 535 224 662 246 C778 265 868 235 942 162 C858 238 758 276 632 256 C508 236 395 205 275 202 Z" fill="#0B4F9F"/>
+          <path d="M582 206 C695 224 812 214 934 152 C832 204 718 214 606 196 Z" fill="#009FE3"/>
+          <!-- Линии и подпись -->
+          <rect x="68" y="280" width="95" height="5" fill="#042559"/>
+          <rect x="837" y="280" width="95" height="5" fill="#042559"/>
+          <text x="500" y="291" text-anchor="middle" fill="#042559" font-family="Inter, Arial, sans-serif" font-weight="900" font-style="italic" font-size="25" letter-spacing="5">KAZAKHSTAN SWIMMING LEAGUE</text>
+        </svg>
+      </div>
+
+      <!-- Фирменная информационная панель турнира -->
+      <div class="ksl-gradient rounded-3xl p-6 sm:p-10 text-white shadow-xl">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 text-xs sm:text-sm font-semibold tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-[#009FE3]"></span>
+              Открытый республиканский турнир по плаванию • Сезон 2026
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight uppercase">
+              Kazakhstan Swimming League
+            </h1>
+            <p class="text-sky-100 text-base sm:text-lg leading-relaxed">
+              Официальные республиканские старты среди спортивных школ, клубов и независимых пловцов. Электронный хронометраж, 6 возрастных категорий и рейтинговые заплывы на длинной воде.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-1 text-sm font-medium text-sky-100">
+              <span>📅 18–20 декабря 2026</span>
+              <span>📍 г. Алматы, Дворец водного спорта (50 м, 8 дорожек)</span>
+            </div>
+            <div class="flex flex-wrap gap-3 pt-3">
+              <a href="#register" class="bg-[#009FE3] hover:bg-[#0086c2] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition">
+                Подать заявку на участие
+              </a>
+              <button onclick="openModal()" class="bg-white/15 hover:bg-white/25 text-white font-semibold px-6 py-3.5 rounded-xl border border-white/25 transition">
+                Положение турнира
+              </button>
+            </div>
+          </div>
+
+          <!-- Таймер до старта -->
+          <div class="lg:col-span-5">
+            <div class="bg-[#042559]/70 backdrop-blur border border-white/15 rounded-2xl p-6">
+              <div class="text-xs uppercase tracking-wider text-sky-200 font-semibold mb-1">Обратный отсчёт</div>
+              <div class="text-lg font-bold mb-4">До старта заплывов KSL</div>
+              <div class="grid grid-cols-4 gap-2.5 text-center" id="countdown">
+                <div class="bg-white/10 rounded-xl p-3">
+                  <div id="cd-days" class="text-2xl sm:text-3xl font-black">24</div>
+                  <div class="text-[11px] uppercase text-sky-200 mt-1">Дней</div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-3">
+                  <div id="cd-hours" class="text-2xl sm:text-3xl font-black">12</div>
+                  <div class="text-[11px] uppercase text-sky-200 mt-1">Часов</div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-3">
+                  <div id="cd-mins" class="text-2xl sm:text-3xl font-black">45</div>
+                  <div class="text-[11px] uppercase text-sky-200 mt-1">Минут</div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-3">
+                  <div id="cd-secs" class="text-2xl sm:text-3xl font-black">00</div>
+                  <div class="text-[11px] uppercase text-sky-200 mt-1">Секунд</div>
+                </div>
+              </div>
+              <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-sky-200">
+                <span>Приём заявок открыт до 14 декабря</span>
+                <span class="text-emerald-300 font-semibold">● Регистрация идёт</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 ключевые цифры -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-6 border-t border-white/15">
+          <div>
+            <div class="text-2xl sm:text-3xl font-black">50 м / 8 дор.</div>
+            <div class="text-xs sm:text-sm text-sky-200">Олимпийский бассейн, 27 °C</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black">3 дня</div>
+            <div class="text-xs sm:text-sm text-sky-200">Утренние и финальные сессии</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black">6 групп</div>
+            <div class="text-xs sm:text-sm text-sky-200">От 2016 г.р. до категории Open</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black">1 500 000 ₸</div>
+            <div class="text-xs sm:text-sm text-sky-200">Призовой фонд кубка лиги</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О ЛИГЕ И РЕГЛАМЕНТ -->
+  <section id="about" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Официальные правила</span>
+        <h2 class="text-3xl font-black mt-1">О лиге и регламент проведения KSL</h2>
+        <p class="text-slate-600 mt-2">Соревнования проводятся по действующим правилам World Aquatics и Федерации водных видов спорта Республики Казахстан.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-11 h-11 rounded-xl bg-sky-100 text-[#009FE3] flex items-center justify-center font-black text-lg mb-4">01</div>
+          <h3 class="text-lg font-bold mb-2">Допуск и мандатная комиссия</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            К участию допускаются спортсмены ДЮСШ, частных клубов и индивидуальные пловцы. Обязательны: медицинский допуск (справка 073/у), спортивная страховка от несчастных случаев и удостоверение личности / свидетельство о рождении.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-11 h-11 rounded-xl bg-sky-100 text-[#009FE3] flex items-center justify-center font-black text-lg mb-4">02</div>
+          <h3 class="text-lg font-bold mb-2">Хронометраж и правило старта</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Фиксация результатов осуществляется электронной системой хронометража с финишными щитами. На всех дистанциях действует правило одного старта — спортсмен, допустивший фальстарт, снимается с заплыва.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-11 h-11 rounded-xl bg-sky-100 text-[#009FE3] flex items-center justify-center font-black text-lg mb-4">03</div>
+          <h3 class="text-lg font-bold mb-2">Лимит дистанций и взносы</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Каждый спортсмен имеет право стартовать не более чем на 4 индивидуальных дистанциях за весь турнир и в эстафетах. Стартовый взнос — 4 500 ₸ за одну дистанцию (оплата после подтверждения заявки).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВОЗРАСТНЫЕ КАТЕГОРИИ И ДИСТАНЦИИ -->
+  <section id="categories" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Программа соревнований</span>
+          <h2 class="text-3xl font-black mt-1">Возрастные категории и дистанции</h2>
+        </div>
+
+        <!-- Фильтр по стилям -->
+        <div class="flex flex-wrap gap-2" id="style-filters">
+          <button data-style="all" class="style-btn active bg-[#062356] text-white text-xs font-bold px-3.5 py-2 rounded-lg transition">Все стили</button>
+          <button data-style="freestyle" class="style-btn bg-slate-100 hover:bg-slate-200 text-[#062356] text-xs font-bold px-3.5 py-2 rounded-lg transition">Вольный стиль</button>
+          <button data-style="backstroke" class="style-btn bg-slate-100 hover:bg-slate-200 text-[#062356] text-xs font-bold px-3.5 py-2 rounded-lg transition">На спине</button>
+          <button data-style="breaststroke" class="style-btn bg-slate-100 hover:bg-slate-200 text-[#062356] text-xs font-bold px-3.5 py-2 rounded-lg transition">Брасс</button>
+          <button data-style="butterfly" class="style-btn bg-slate-100 hover:bg-slate-200 text-[#062356] text-xs font-bold px-3.5 py-2 rounded-lg transition">Баттерфляй</button>
+          <button data-style="medley" class="style-btn bg-slate-100 hover:bg-slate-200 text-[#062356] text-xs font-bold px-3.5 py-2 rounded-lg transition">Комплекс</button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="categories-grid">
+        <!-- Заполняется скриптом -->
+      </div>
+    </div>
+  </section>
+
+  <!-- РАСПИСАНИЕ СТАРТОВ -->
+  <section id="schedule" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Тайминг турнира</span>
+          <h2 class="text-3xl font-black mt-1">Расписание стартов на 3 дня</h2>
+        </div>
+
+        <div class="inline-flex bg-white p-1.5 rounded-xl border border-slate-200 shadow-sm">
+          <button onclick="selectDay(1)" id="day-btn-1" class="px-4 py-2 rounded-lg text-sm font-bold bg-[#009FE3] text-white transition">День 1 • 18 дек</button>
+          <button onclick="selectDay(2)" id="day-btn-2" class="px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:text-[#062356] transition">День 2 • 19 дек</button>
+          <button onclick="selectDay(3)" id="day-btn-3" class="px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:text-[#062356] transition">День 3 • 20 дек</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-100/80 text-xs uppercase text-slate-500 border-b border-slate-200">
+                <th class="py-3.5 px-5 font-bold">Время</th>
+                <th class="py-3.5 px-5 font-bold">Сессия / Событие</th>
+                <th class="py-3.5 px-5 font-bold">Дистанции и категории</th>
+                <th class="py-3.5 px-5 font-bold">Статус</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-body" class="divide-y divide-slate-100 text-sm">
+              <!-- Заполняется скриптом -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- НАГРАДЫ И НОРМАТИВЫ -->
+  <section id="awards" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Призовой фонд и рейтинги</span>
+        <h2 class="text-3xl font-black mt-1">Награды и выполнение разрядов</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-slate-200 bg-gradient-to-b from-amber-50/60 to-white">
+          <div class="text-3xl mb-3">🥇</div>
+          <h3 class="text-lg font-bold mb-2">Личное первенство</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Победители и призёры на каждой дистанции в своей возрастной группе награждаются эксклюзивными медалями KSL и официальными дипломами лиги.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-slate-200 bg-gradient-to-b from-sky-50/70 to-white">
+          <div class="text-3xl mb-3">🏆</div>
+          <h3 class="text-lg font-bold mb-2">Абсолютный зачёт по очкам</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Топ-3 юношей и топ-3 девушек, набравших наибольшую сумму очков World Aquatics по итогам 3 лучших дистанций, получают денежные сертификаты из фонда 1 500 000 ₸.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-slate-200 bg-gradient-to-b from-indigo-50/60 to-white">
+          <div class="text-3xl mb-3">⏱️</div>
+          <h3 class="text-lg font-bold mb-2">Официальные разряды</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Результаты турнира вносятся в единую базу и учитываются для присвоения и подтверждения спортивных разрядов от III юношеского до КМС РК.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СТАРТОВЫЙ ПРОТОКОЛ И ОНЛАЙН-РЕГИСТРАЦИЯ -->
+  <section id="protocols" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Таблица стартового протокола -->
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Предварительные заявки</span>
+              <h2 class="text-2xl font-black">Стартовый протокол KSL</h2>
+            </div>
+            <input
+              type="text"
+              id="protocol-search"
+              placeholder="Поиск по фамилии или клубу..."
+              class="px-3.5 py-2 text-sm border border-slate-300 rounded-xl focus:outline-none focus:border-[#009FE3]"
+            />
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="bg-slate-100 text-xs uppercase text-slate-500 border-b border-slate-200">
+                  <th class="py-3 px-3">Спортсмен</th>
+                  <th class="py-3 px-3">Г.р.</th>
+                  <th class="py-3 px-3">Клуб / Город</th>
+                  <th class="py-3 px-3">Дистанция</th>
+                  <th class="py-3 px-3">Заяв. время</th>
+                </tr>
+              </thead>
+              <tbody id="protocol-body" class="divide-y divide-slate-100">
+                <!-- Заполняется скриптом -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Форма регистрации -->
+        <div id="register" class="lg:col-span-5 bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Онлайн-заявка</span>
+          <h2 class="text-2xl font-black mt-1 mb-1">Регистрация участника</h2>
+          <p class="text-xs text-slate-500 mb-5">После отправки спортсмен сразу появится в предварительном стартовом протоколе.</p>
+
+          <form id="reg-form" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1">ФИО спортсмена *</label>
+              <input type="text" id="reg-name" required placeholder="Например: Сериков Амир" class="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-xl focus:outline-none focus:border-[#009FE3]" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Год рождения *</label>
+                <input type="number" id="reg-year" required min="1985" max="2018" value="2011" class="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-xl focus:outline-none focus:border-[#009FE3]" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Заявочное время *</label>
+                <input type="text" id="reg-time" required placeholder="00:58.40" value="01:02.15" class="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-xl focus:outline-none focus:border-[#009FE3]" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Клуб / СДЮСШ / Город *</label>
+              <input type="text" id="reg-club" required placeholder="KSL Swim Team / Алматы" class="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-xl focus:outline-none focus:border-[#009FE3]" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Основная дистанция *</label>
+              <select id="reg-dist" class="w-full px-3.5 py-2.5 text-sm border border-slate-300 rounded-xl focus:outline-none focus:border-[#009FE3] bg-white">
+                <option value="50 м Вольный стиль">50 м Вольный стиль</option>
+                <option value="100 м Вольный стиль">100 м Вольный стиль</option>
+                <option value="200 м Вольный стиль">200 м Вольный стиль</option>
+                <option value="100 м На спине">100 м На спине</option>
+                <option value="100 м Брасс">100 м Брасс</option>
+                <option value="100 м Баттерфляй">100 м Баттерфляй</option>
+                <option value="200 м Комплекс">200 м Комплекс</option>
+              </select>
+            </div>
+
+            <button type="submit" class="w-full bg-[#009FE3] hover:bg-[#0086c2] text-white font-bold py-3 rounded-xl shadow transition">
+              Добавить в стартовый протокол
+            </button>
+
+            <div id="reg-success" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold">
+              ✅ Заявка принята! Спортсмен добавлен в стартовый протокол слева.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ И МЕСТО ПРОВЕДЕНИЯ -->
+  <section id="contacts" class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#009FE3]">Оргкомитет лиги</span>
+          <h2 class="text-3xl font-black mt-1 mb-4">Контакты и место проведения</h2>
+          <div class="space-y-3 text-sm text-slate-700">
+            <p><strong>Бассейн:</strong> Дворец водного спорта, г. Алматы, ул. Тимирязева, 41</p>
+            <p><strong>Главный судья соревнований:</strong> Нурлан Касымов (судья национальной категории)</p>
+            <p><strong>Секретариат заявок:</strong> +7 (777) 555-20-26 • info@ksl-swim.kz</p>
+            <p><strong>Мандатная комиссия:</strong> 17 декабря с 14:00 до 19:00 в фойе бассейна</p>
+          </div>
+          <div class="mt-5">
+            <button onclick="copyAddress()" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-xs font-bold text-[#062356] transition">
+              📋 Скопировать адрес бассейна
+            </button>
+            <span id="copy-msg" class="ml-3 text-xs font-semibold text-emerald-600 hidden">Адрес скопирован!</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-100 rounded-2xl p-6 border border-slate-200">
+          <div class="text-xs font-bold uppercase text-slate-500 mb-2">Параметры чаши</div>
+          <ul class="space-y-2.5 text-sm font-medium text-[#062356]">
+            <li class="flex justify-between py-1.5 border-b border-slate-200"><span>Длина бассейна:</span><strong>50 метров (длинный борт)</strong></li>
+            <li class="flex justify-between py-1.5 border-b border-slate-200"><span>Количество дорожек:</span><strong>8 дорожек (ширина 2.5 м)</strong></li>
+            <li class="flex justify-between py-1.5 border-b border-slate-200"><span>Температура воды:</span><strong>26.8 – 27.2 °C</strong></li>
+            <li class="flex justify-between py-1.5"><span>Стартовые тумбы:</span><strong>С регулируемым упором для ног</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="bg-[#042559] text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="bg-white px-4 py-2 rounded-xl">
+        <svg viewBox="0 0 1000 320" class="h-10 w-auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KSL Kazakhstan Swimming League">
+          <g fill="#042559">
+            <path d="M180 42 L262 42 L231 118 L322 42 L416 42 L292 136 L372 206 L278 206 L221 153 L199 206 L118 206 Z"/>
+            <path d="M448 42 L688 42 L669 87 L485 87 C473 87 468 92 465 98 C463 104 467 108 479 108 L602 108 C648 108 666 130 652 163 C638 196 604 206 556 206 L382 206 L401 161 L558 161 C571 161 577 156 580 149 C583 142 578 138 565 138 L442 138 C397 138 380 116 394 84 C407 53 428 42 448 42 Z"/>
+            <path d="M726 42 L808 42 L760 159 L906 159 L886 206 L658 206 Z"/>
+          </g>
+          <path d="M68 250 C205 186 355 186 502 224 C638 258 785 245 948 142 C822 232 668 262 504 234 C354 208 212 206 68 250 Z" fill="#009FE3"/>
+          <path d="M275 202 C412 192 535 224 662 246 C778 265 868 235 942 162 C858 238 758 276 632 256 C508 236 395 205 275 202 Z" fill="#0B4F9F"/>
+          <path d="M582 206 C695 224 812 214 934 152 C832 204 718 214 606 196 Z" fill="#009FE3"/>
+          <rect x="68" y="280" width="95" height="5" fill="#042559"/>
+          <rect x="837" y="280" width="95" height="5" fill="#042559"/>
+          <text x="500" y="291" text-anchor="middle" fill="#042559" font-family="Inter, Arial, sans-serif" font-weight="900" font-style="italic" font-size="25" letter-spacing="5">KAZAKHSTAN SWIMMING LEAGUE</text>
+        </svg>
+      </div>
+      <div class="text-xs text-sky-200 text-center sm:text-right">
+        © 2026 Kazakhstan Swimming League (KSL). Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО ПОЛОЖЕНИЯ -->
+  <div id="modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+        <h3 class="text-lg font-black">Положение Kazakhstan Swimming League 2026</h3>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold">✕</button>
+      </div>
+      <div class="text-sm text-slate-600 space-y-2.5 max-h-80 overflow-y-auto pr-2">
+        <p><strong>1. Цели и задачи:</strong> популяризация спортивного плавания в Республике Казахстан, повышение спортивного мастерства и выявление сильнейших пловцов сезона 2026.</p>
+        <p><strong>2. Сроки и место:</strong> 18–20 декабря 2026 г., г. Алматы, Дворец водного спорта (50 м).</p>
+        <p><strong>3. Участники:</strong> спортсмены 6 возрастных групп (от 2016 г.р. и младше до категории Open 2007 г.р. и старше).</p>
+        <p><strong>4. Финансовые условия:</strong> стартовый взнос составляет 4 500 тенге за одну индивидуальную дистанцию. Эстафеты — 10 000 тенге с команды.</p>
+      </div>
+      <div class="mt-5 pt-4 border-t border-slate-200 flex justify-end gap-3">
+        <button onclick="downloadRegulation()" class="px-4 py-2 rounded-xl bg-[#009FE3] text-white text-xs font-bold hover:bg-[#0086c2]">
+          Скачать .TXT
+        </button>
+        <button onclick="closeModal()" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-bold hover:bg-slate-200">
+          Закрыть
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Данные возрастных категорий
+    const categoriesData = [
+      {
+        group: "Группа A • 2016 г.р. и младше",
+        badge: "Дети",
+        distances: [
+          { name: "50 м Вольный стиль", style: "freestyle" },
+          { name: "50 м На спине", style: "backstroke" },
+          { name: "50 м Брасс", style: "breaststroke" },
+          { name: "50 м Баттерфляй", style: "butterfly" }
+        ]
+      },
+      {
+        group: "Группа B • 2014–2015 г.р.",
+        badge: "Младшие юноши/девушки",
+        distances: [
+          { name: "50 м и 100 м Вольный стиль", style: "freestyle" },
+          { name: "50 м и 100 м На спине", style: "backstroke" },
+          { name: "50 м и 100 м Брасс", style: "breaststroke" },
+          { name: "200 м Комплекс", style: "medley" }
+        ]
+      },
+      {
+        group: "Группа C • 2012–2013 г.р.",
+        badge: "Юноши и девушки",
+        distances: [
+          { name: "50 м, 100 м, 200 м Вольный стиль", style: "freestyle" },
+          { name: "100 м На спине", style: "backstroke" },
+          { name: "100 м Брасс", style: "breaststroke" },
+          { name: "100 м Баттерфляй", style: "butterfly" },
+          { name: "200 м Комплекс", style: "medley" }
+        ]
+      },
+      {
+        group: "Группа D • 2010–2011 г.р.",
+        badge: "Старшие юноши/девушки",
+        distances: [
+          { name: "50 м, 100 м, 400 м Вольный стиль", style: "freestyle" },
+          { name: "100 м и 200 м На спине", style: "backstroke" },
+          { name: "100 м и 200 м Брасс", style: "breaststroke" },
+          { name: "100 м Баттерфляй", style: "butterfly" },
+          { name: "200 м Комплекс", style: "medley" }
+        ]
+      },
+      {
+        group: "Группа E • 2008–2009 г.р.",
+        badge: "Юниоры",
+        distances: [
+          { name: "50 м, 100 м, 200 м Вольный стиль", style: "freestyle" },
+          { name: "100 м и 200 м На спине", style: "backstroke" },
+          { name: "100 м и 200 м Брасс", style: "breaststroke" },
+          { name: "100 м и 200 м Баттерфляй", style: "butterfly" },
+          { name: "200 м и 400 м Комплекс", style: "medley" }
+        ]
+      },
+      {
+        group: "Группа OPEN • 2007 г.р. и старше",
+        badge: "Абсолют",
+        distances: [
+          { name: "50 м, 100 м, 200 м Вольный стиль", style: "freestyle" },
+          { name: "50 м и 100 м На спине", style: "backstroke" },
+          { name: "50 м и 100 м Брасс", style: "breaststroke" },
+          { name: "50 м и 100 м Баттерфляй", style: "butterfly" },
+          { name: "200 м Комплекс", style: "medley" }
+        ]
+      }
+    ];
+
+    function renderCategories(filterStyle = "all") {
+      const grid = document.getElementById("categories-grid");
+      grid.innerHTML = "";
+      categoriesData.forEach(cat => {
+        const filtered = filterStyle === "all"
+          ? cat.distances
+          : cat.distances.filter(d => d.style === filterStyle);
+
+        if (filtered.length === 0) return;
+
+        const card = document.createElement("div");
+        card.className = "p-6 rounded-2xl border border-slate-200 bg-slate-50/60 hover:border-[#009FE3] transition";
+        card.innerHTML = `
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-sky-100 text-[#042559]">${cat.badge}</span>
+          </div>
+          <h3 class="text-lg font-extrabold mb-3">${cat.group}</h3>
+          <ul class="space-y-1.5 text-sm text-slate-700">
+            ${filtered.map(d => `<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#009FE3]"></span>${d.name}</li>`).join("")}
+          </ul>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    document.querySelectorAll(".style-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".style-btn").forEach(b => {
+          b.classList.remove("bg-[#062356]", "text-white");
+          b.classList.add("bg-slate-100", "text-[#062356]");
+        });
+        btn.classList.remove("bg-slate-100", "text-[#062356]");
+        btn.classList.add("bg-[#062356]", "text-white");
+        renderCategories(btn.dataset.style);
+      });
+    });
+
+    // 2. Расписание по дням
+    const scheduleData = {
+      1: [
+        { time: "08:30 – 09:45", event: "Разминка участников", desc: "Дорожки 1–4 юноши, дорожки 5–8 девушки", status: "По расписанию" },
+        { time: "10:00", event: "Торжественное открытие KSL", desc: "Парад команд и приветствие оргкомитета", status: "Церемония" },
+        { time: "10:30", event: "Утренняя сессия • День 1", desc: "100 м Вольный стиль, 100 м Брасс, 50 м На спине (все группы)", status: "Заплывы" },
+        { time: "17:00", event: "Финальные заплывы Дня 1", desc: "Сильнейшие заплывы и награждение победителей", status: "Финалы" }
+      ],
+      2: [
+        { time: "08:30 – 09:45", event: "Разминка участников", desc: "Все возрастные группы", status: "По расписанию" },
+        { time: "10:00", event: "Утренняя сессия • День 2", desc: "200 м Вольный стиль, 100 м Баттерфляй, 200 м На спине", status: "Заплывы" },
+        { time: "16:30", event: "Эстафетное плавание", desc: "Комбинированная эстафета 4×50 м (смешанная)", status: "Командный зачёт" },
+        { time: "18:00", event: "Награждение Дня 2", desc: "Вручение медалей и дипломов", status: "Церемония" }
+      ],
+      3: [
+        { time: "08:30 – 09:45", event: "Разминка участников", desc: "Все возрастные группы", status: "По расписанию" },
+        { time: "10:00", event: "Утренняя сессия • День 3", desc: "50 м Вольный стиль, 200 м Комплексное плавание, 50 м Баттерфляй", status: "Заплывы" },
+        { time: "16:00", event: "Суперфиналы и эстафета 4×100 м", desc: "Решающие старты за Кубок лиги", status: "Финалы" },
+        { time: "18:30", event: "Закрытие турнира KSL", desc: "Вручение кубков абсолютным победителям и призового фонда", status: "Церемония" }
+      ]
+    };
+
+    function selectDay(day) {
+      [1, 2, 3].forEach(d => {
+        const btn = document.getElementById(`day-btn-${d}`);
+        if (d === day) {
+          btn.className = "px-4 py-2 rounded-lg text-sm font-bold bg-[#009FE3] text-white transition";
+        } else {
+          btn.className = "px-4 py-2 rounded-lg text-sm font-bold text-slate-600 hover:text-[#062356] transition";
+        }
+      });
+
+      const tbody = document.getElementById("schedule-body");
+      tbody.innerHTML = scheduleData[day].map(item => `
+        <tr class="hover:bg-slate-50">
+          <td class="py-4 px-5 font-bold text-[#042559] whitespace-nowrap">${item.time}</td>
+          <td class="py-4 px-5 font-bold">${item.event}</td>
+          <td class="py-4 px-5 text-slate-600">${item.desc}</td>
+          <td class="py-4 px-5"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-sky-100 text-[#042559]">${item.status}</span></td>
+        </tr>
+      `).join("");
+    }
+
+    // 3. Стартовый протокол и форма
+    const protocolList = [
+      { name: "Ахметов Данияр", year: 2008, club: "KSL Elite / Алматы", dist: "100 м Вольный стиль", time: "00:51.42" },
+      { name: "Ким Алина", year: 2010, club: "AquaStar / Астана", dist: "100 м Баттерфляй", time: "01:03.18" },
+      { name: "Жумабаев Тимур", year: 2009, club: "СДЮСШ №4 / Караганда", dist: "100 м Брасс", time: "01:05.90" },
+      { name: "Садыкова Айгерим", year: 2011, club: "Dolphin / Шымкент", dist: "100 м На спине", time: "01:06.45" },
+      { name: "Иванов Максим", year: 2012, club: "Barracuda / Алматы", dist: "200 м Комплекс", time: "02:18.30" }
+    ];
+
+    function renderProtocol(query = "") {
+      const tbody = document.getElementById("protocol-body");
+      const q = query.toLowerCase().trim();
+      const filtered = protocolList.filter(p =>
+        p.name.toLowerCase().includes(q) || p.club.toLowerCase().includes(q) || p.dist.toLowerCase().includes(q)
+      );
+
+      tbody.innerHTML = filtered.map(p => `
+        <tr class="hover:bg-slate-50">
+          <td class="py-3 px-3 font-bold text-[#042559]">${p.name}</td>
+          <td class="py-3 px-3 text-slate-600">${p.year}</td>
+          <td class="py-3 px-3 text-slate-600">${p.club}</td>
+          <td class="py-3 px-3 font-medium">${p.dist}</td>
+          <td class="py-3 px-3 font-mono font-bold text-[#009FE3]">${p.time}</td>
+        </tr>
+      `).join("");
+    }
+
+    document.getElementById("protocol-search").addEventListener("input", e => {
+      renderProtocol(e.target.value);
+    });
+
+    document.getElementById("reg-form").addEventListener("submit", e => {
+      e.preventDefault();
+      const name = document.getElementById("reg-name").value.trim();
+      const year = document.getElementById("reg-year").value;
+      const club = document.getElementById("reg-club").value.trim();
+      const dist = document.getElementById("reg-dist").value;
+      const time = document.getElementById("reg-time").value.trim();
+
+      protocolList.unshift({ name, year, club, dist, time });
+      renderProtocol(document.getElementById("protocol-search").value);
+
+      const msg = document.getElementById("reg-success");
+      msg.classList.remove("hidden");
+      e.target.reset();
+      setTimeout(() => msg.classList.add("hidden"), 4000);
+    });
+
+    // 4. Таймер обратного отсчёта
+    function updateCountdown() {
+      const target = new Date("2026-12-18T10:00:00+05:00").getTime();
+      const now = new Date().getTime();
+      const diff = Math.max(0, target - now);
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("cd-days").textContent = String(days).padStart(2, "0");
+      document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("cd-mins").textContent = String(mins).padStart(2, "0");
+      document.getElementById("cd-secs").textContent = String(secs).padStart(2, "0");
+    }
+
+    // 5. Модальное окно и утилиты
+    function openModal() {
+      document.getElementById("modal").classList.remove("hidden");
+    }
+    function closeModal() {
+      document.getElementById("modal").classList.add("hidden");
+    }
+    function copyAddress() {
+      navigator.clipboard?.writeText("г. Алматы, ул. Тимирязева, 41, Дворец водного спорта");
+      const msg = document.getElementById("copy-msg");
+      msg.classList.remove("hidden");
+      setTimeout(() => msg.classList.add("hidden"), 2500);
+    }
+    function downloadRegulation() {
+      const text = "ПОЛОЖЕНИЕ О ПРОВЕДЕНИИ ТУРНИРА KAZAKHSTAN SWIMMING LEAGUE (KSL) 2026\n\nДата: 18-20 декабря 2026 г.\nМесто: г. Алматы, Дворец водного спорта (50 м, 8 дорожек)\nКатегории: 6 возрастных групп (от 2016 г.р. до Open).\nКонтакты оргкомитета: +7 (777) 555-20-26 | info@ksl-swim.kz";
+      const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "Polozhenie_KSL_2026.txt";
+      link.click();
+    }
+
+    // Инициализация
+    renderCategories();
+    selectDay(1);
+    renderProtocol();
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
